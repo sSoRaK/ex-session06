@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+}
+/* header & navigator */
+header h2 {
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  font-size: 27px;
+  padding: 10px 0;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 5px 5px 5px 45px;
+}
+nav ul li {
+  width: 5%;
+}
+nav ul li:hover {
+  cursor: pointer;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* main */
+main h3,
+main .head-content,
+main .button-view {
+  text-align: center;
+  margin-bottom: 25px;
+}
+main h3 {
+  font-size: 30px;
+  margin-top: 60px;
+}
+.button-view button {
+  border: none;
+  border: 0.5px solid gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main h4 {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+.project-list {
+  display: flex;
+  margin: 35px 450px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-list_img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.about-me {
+  text-align: center;
+}
+.about-me h4 {
+  font-size: 25px;
+  margin-top: 80px;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  margin-top: 80px;
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+@media screen and (max-width: 958px) {
+  nav ul li {
+    width: 10%;
+  }
+  main h4 {
+    text-align: center;
+    margin-top: 53px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .project-list {
+    display: flex;
+    margin: 0 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav ul li {
+    width: 200px;
+  }
+  main h3 {
+    font-size: 23px;
+  }
+  .head-content,
+  .about-me p {
+    font-size: 13px;
+  }
+  .button-view button {
+    font-size: 10px;
+  }
+  main h4,
+  .about-me h4 {
+    font-size: 20px;
+  }
+  .project-list {
+    margin: 0 30px;
+    flex-wrap: wrap;
+  }
+  .project-list_img {
+    margin: 0 10px 20px 10px;
+  }
+  .project-list_img img {
+    width: 150px;
+    height: 150px;
+  }
+  footer {
+    margin-top: 50px;
+    padding: 15px;
+    font-size: 10px;
+  }
+}

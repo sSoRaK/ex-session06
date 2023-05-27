@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: grid;
+  margin: 0 auto;
+  width: 600px;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: 200px repeat(4, 100px);
+}
+.container-head {
+  width: 100%;
+  height: 200px;
+  padding-left: 10px;
+  color: #fff;
+  background-image: url("https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=300");
+  background-size: cover;
+  grid-column: 1 / 3;
+  grid-row: 1/ 2;
+}
+p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.left-shapes {
+  background-image: url("https://images.unsplash.com/photo-1679678691006-0ad24fecb769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  width: 100%;
+  color: white;
+  background-size: cover;
+  position: relative;
+  grid-column: 1 /2;
+  grid-row: 2 / 5;
+}
+.left-shapes div {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 15px;
+}
+.left-talk,
+.right-angry,
+.right-balloon {
+  background-image: url("https://images.unsplash.com/photo-1679678691006-0ad24fecb769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  height: 100px;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+.left-talk div {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+}
+.right-angry div,
+.right-balloon div {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+.left-talk {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.right-balloon {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.right-angry {
+  grid-row: 3/4;
+}
+.right-sign {
+  background-image: url("https://images.unsplash.com/photo-1679678691006-0ad24fecb769?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8OHx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  width: 100%;
+  color: white;
+  grid-column: 2/3;
+  grid-row: 4/6;
+  position: relative;
+}
+.right-sign p {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+.right-sign button {
+  color: black;
+  padding: 10px 30px;
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 5px;
+  /* căn giữa theo position */
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+.container-head,
+.left-shapes,
+.left-talk,
+.right-balloon,
+.right-angry,
+.right-sign {
+  box-shadow: inset 10px 10px 300px -35px rgba(0, 0, 0, 0.55);
+}

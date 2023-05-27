@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+h2 {
+  text-align: center;
+  margin: 40px;
+  font-size: 35px;
+}
+.container {
+  display: flex;
+  margin: 0 600px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.comic-item {
+  width: 300px;
+  margin: 15px 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 3px 8px 2px rgba(0, 0, 0, 0.45);
+}
+.comic-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.comic-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.comic-item p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.buy-button {
+  width: 55px;
+  background-color: #333332;
+  margin: 0 auto 15px auto;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.buy-button:hover {
+  background-color: #333332b5;
+}
+@media screen and (max-width: 958px) {
+  .container {
+    margin: 0 130px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    margin: 0 130px;
+  }
+  .comic-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .comic-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .buy-button {
+    font-size: 10px;
+  }
+}
